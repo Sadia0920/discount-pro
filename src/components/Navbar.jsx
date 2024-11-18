@@ -1,17 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
+import { RiCoupon3Fill } from 'react-icons/ri'
+import Header from './Header'
 
 export default function Navbar() {
     const links = <>
-    <NavLink to='/'>Home</NavLink>
-    <NavLink className='ml-5' to='/brands'>Brands</NavLink>
-    <NavLink className='ml-5' to='/about'>About</NavLink>
-    <NavLink className='ml-5' to='/myProfile'>My Profile</NavLink>
+    <NavLink className='text-gray-400 text-lg font-semibold' to='/'>Home</NavLink>
+    <NavLink className='ml-5 text-gray-400 text-lg font-semibold' to='/brands'>Brands</NavLink>
+    <NavLink className='ml-5 text-gray-400 text-lg font-semibold' to='/about'>About</NavLink>
+    <NavLink className='ml-5 text-gray-400 text-lg font-semibold' to='/myProfile'>My Profile</NavLink>
     </>
   return (
-    <div>
-        <div className="navbar bg-base-100">
+  <div>
+    <Header></Header>
+  <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,7 +37,10 @@ export default function Navbar() {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Discount PRO</a>
+    <div className='flex items-center justify-center'>
+    <div className='text-2xl text-blue-800'><RiCoupon3Fill></RiCoupon3Fill></div>
+    <a className="pl-2 btn btn-ghost text-2xl font-bold text-blue-600">Discount PRO</a>
+    </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -42,7 +48,8 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn bg-blue-500 text-white font-semibold mr-3">Register</a>
+    <a className="btn bg-blue-500 text-white font-semibold">Login</a>
   </div>
 </div>
     </div>

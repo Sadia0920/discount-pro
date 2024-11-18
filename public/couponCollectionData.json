@@ -1,0 +1,193 @@
+[
+    {
+      "_id": "1",
+      "brand_name": "TechGiant",
+      "rating": 4.7,
+      "description": "Leading tech brand offering innovative gadgets.",
+      "brand_logo": "https://example.com/logos/techgiant.png",
+      "coupons": [
+        {
+          "coupon-code": "TG15OFF",
+          "description": "15% off on your first purchase.",
+          "expiry-date": "2024-12-31",
+          "condition": "Minimum purchase of $100 required.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/techgiant",
+      "category": "Electronics",
+      "isSaleOn": true
+    },
+    {
+      "_id": "2",
+      "brand_name": "Fashionista",
+      "rating": 4.5,
+      "description": "Trendy fashion and accessories for all seasons.",
+      "brand_logo": "https://example.com/logos/fashionista.png",
+      "coupons": [
+        {
+          "coupon-code": "FASHION20",
+          "description": "20% off on all apparel.",
+          "expiry-date": "2024-11-30",
+          "condition": "No minimum purchase.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/fashionista",
+      "category": "Fashion",
+      "isSaleOn": false
+    },
+    {
+      "_id": "3",
+      "brand_name": "Healthy Eats",
+      "rating": 4.2,
+      "description": "Healthy, organic food for a better lifestyle.",
+      "brand_logo": "https://example.com/logos/healthyeats.png",
+      "coupons": [
+        {
+          "coupon-code": "EAT5",
+          "description": "$5 off your next grocery order.",
+          "expiry-date": "2024-11-25",
+          "condition": "Only valid for grocery items.",
+          "coupon_type": "Fixed Amount"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/healthyeats",
+      "category": "Food & Beverage",
+      "isSaleOn": true
+    },
+    {
+      "_id": "4",
+      "brand_name": "HomeStyle",
+      "rating": 4.8,
+      "description": "Stylish furniture and home decor for your living spaces.",
+      "brand_logo": "https://example.com/logos/homestyle.png",
+      "coupons": [
+        {
+          "coupon-code": "HOME30",
+          "description": "30% off on home furniture.",
+          "expiry-date": "2024-12-10",
+          "condition": "Minimum purchase of $200.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/homestyle",
+      "category": "Home & Living",
+      "isSaleOn": true
+    },
+    {
+      "_id": "5",
+      "brand_name": "AutoWorld",
+      "rating": 4.6,
+      "description": "Car accessories and parts for all vehicle types.",
+      "brand_logo": "https://example.com/logos/autoworld.png",
+      "coupons": [
+        {
+          "coupon-code": "AUTO10",
+          "description": "10% off on all car accessories.",
+          "expiry-date": "2024-11-28",
+          "condition": "No minimum purchase.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/autoworld",
+      "category": "Automotive",
+      "isSaleOn": false
+    },
+    {
+      "_id": "6",
+      "brand_name": "Gadget Guru",
+      "rating": 4.3,
+      "description": "Latest gadgets and tech for modern enthusiasts.",
+      "brand_logo": "https://example.com/logos/gadgetguru.png",
+      "coupons": [
+        {
+          "coupon-code": "GG10",
+          "description": "10% off on all electronics.",
+          "expiry-date": "2024-12-01",
+          "condition": "No minimum purchase.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/gadgetguru",
+      "category": "Electronics",
+      "isSaleOn": false
+    },
+    {
+      "_id": "7",
+      "brand_name": "FreshMart",
+      "rating": 4.1,
+      "description": "Fresh produce, dairy, and groceries delivered to your door.",
+      "brand_logo": "https://example.com/logos/freshmart.png",
+      "coupons": [
+        {
+          "coupon-code": "FRESH10",
+          "description": "10% off on fresh groceries.",
+          "expiry-date": "2024-11-20",
+          "condition": "Order over $50.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/freshmart",
+      "category": "Food & Beverage",
+      "isSaleOn": true
+    },
+    {
+      "_id": "8",
+      "brand_name": "Sportify",
+      "rating": 4.4,
+      "description": "Sporting goods for every athlete.",
+      "brand_logo": "https://example.com/logos/sportify.png",
+      "coupons": [
+        {
+          "coupon-code": "SPORT15",
+          "description": "15% off on all fitness equipment.",
+          "expiry-date": "2024-12-15",
+          "condition": "No minimum purchase.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/sportify",
+      "category": "Sports",
+      "isSaleOn": false
+    },
+    {
+      "_id": "9",
+      "brand_name": "Book Haven",
+      "rating": 4.9,
+      "description": "All your reading needs in one place.",
+      "brand_logo": "https://example.com/logos/bookhaven.png",
+      "coupons": [
+        {
+          "coupon-code": "BOOK5",
+          "description": "$5 off on all books.",
+          "expiry-date": "2024-11-22",
+          "condition": "Valid on orders over $30.",
+          "coupon_type": "Fixed Amount"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/bookhaven",
+      "category": "Books & Education",
+      "isSaleOn": false
+    },
+    {
+      "_id": "10",
+      "brand_name": "Beauty Bliss",
+      "rating": 4.6,
+      "description": "Beauty products and skincare solutions for every skin type.",
+      "brand_logo": "https://example.com/logos/beautybliss.png",
+      "coupons": [
+        {
+          "coupon-code": "BLISS20",
+          "description": "20% off on skincare products.",
+          "expiry-date": "2024-11-30",
+          "condition": "Valid only on skincare items.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://example.com/shop/beautybliss",
+      "category": "Beauty & Health",
+      "isSaleOn": true
+    }
+  ]
+  

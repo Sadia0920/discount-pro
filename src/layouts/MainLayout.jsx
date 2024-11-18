@@ -6,8 +6,10 @@ import Footer from '../components/Footer'
 export default function MainLayout() {
   return (
     <div>
+        <div className='w-11/12 mx-auto py-5'>
         <Navbar></Navbar>
-        <div className="min-h-[calc(100vh-300px)]">
+        </div>
+        <div className="min-h-[calc(100vh-330px)]">
         <Outlet></Outlet>
         </div>
         <Footer></Footer>

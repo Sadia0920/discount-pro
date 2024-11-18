@@ -1,8 +1,23 @@
-# React + Vite
+# Discount PRO 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live link to the deployed project
+- 
 
-Currently, two official plugins are available:
+## Purpose of this project 
+- 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## key Features of my project
+- Feature 1: Show each products information in home page
+- Feature 2: In cart section we sorted the data by price using sorted button
+- Feature 3: In cart section we show the total amount of money
+- Feature 4: In cart section we have purchase button by which we can display the modal and go back to home page
+- Feature 5: we can show the details information of product by clicking details button
+
+## List of npm packages used in this project 
+- React Router
+- React Icon
+- React Rating 
+- Recharts
+
+
+

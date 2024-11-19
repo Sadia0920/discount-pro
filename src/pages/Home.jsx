@@ -3,6 +3,7 @@ import Banner from '../components/banner'
 import TopBrands from '../components/TopBrands'
 import { useLoaderData } from 'react-router-dom'
 import Marquee from 'react-fast-marquee';
+import BrandsOnSale from '../components/BrandsOnSale';
 
 
 export default function Home() {
@@ -20,6 +21,12 @@ export default function Home() {
         }
         </Marquee>
         </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 mt-9'>
+        {
+          couponData.map(item => <BrandsOnSale key={item._id} item={item}></BrandsOnSale>)
+        }
+        </div>
+        
       </div>
       
     </div>

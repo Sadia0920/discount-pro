@@ -12,6 +12,13 @@
           "expiry-date": "2024-12-31",
           "condition": "Minimum purchase of $100 required.",
           "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "ASUS25OFF",
+          "description": "25% off on laptop.",
+          "expiry-date": "2024-12-31",
+          "condition": "Minimum purchase of $200 required.",
+          "coupon_type": "Percentage"
         }
       ],
       "shop-Link": "https://www.asus.com/bd/?gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7rSzp9BpsX_7EbM5x2PXI3H6rcz6yMngx8OvvGZvpqNk7FmLOBTopUaAs2cEALw_wcB",
@@ -35,7 +42,7 @@
       ],
       "shop-Link": "https://m.shein.com/?lang=en",
       "category": "Fashion",
-      "isSaleOn": false
+      "isSaleOn": true
     },
     {
       "_id": "3",
@@ -47,6 +54,13 @@
         {
           "coupon-code": "EAT5",
           "description": "$5 off your next order.",
+          "expiry-date": "2024-11-25",
+          "condition": "Only valid for pizza.",
+          "coupon_type": "Fixed Amount"
+        },
+        {
+          "coupon-code": "EAT10",
+          "description": "$10 off on special pizza.",
           "expiry-date": "2024-11-25",
           "condition": "Only valid for pizza.",
           "coupon_type": "Fixed Amount"
@@ -84,7 +98,21 @@
       "coupons": [
         {
           "coupon-code": "BATA10",
-          "description": "10% off on all shoes.",
+          "description": "10% off on all shoes for man and woman.",
+          "expiry-date": "2024-11-28",
+          "condition": "No minimum purchase.",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "BATA15",
+          "description": "15% off on all shoes for kids.",
+          "expiry-date": "2024-11-28",
+          "condition": "No minimum purchase.",
+          "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "BATA30",
+          "description": "30% off on all winter shoes.",
           "expiry-date": "2024-11-28",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
@@ -126,10 +154,17 @@
           "expiry-date": "2024-11-20",
           "condition": "Order over $50.",
           "coupon_type": "Percentage"
+        },
+        {
+          "coupon-code": "Shwapno5",
+          "description": "5% off on groceries.",
+          "expiry-date": "2024-11-20",
+          "condition": "Order over $30.",
+          "coupon_type": "Percentage"
         }
       ],
       "shop-Link": "https://www.shwapno.com/",
-      "category": "Food & Beverage",
+      "category": "Grocery",
       "isSaleOn": true
     },
     {
@@ -153,6 +188,25 @@
     },
     {
       "_id": "9",
+      "brand_name": "The Body Shop",
+      "rating": 4.6,
+      "description": "Beauty products and skincare solutions for every skin type.",
+      "brand_logo": "https://i.ibb.co.com/Vm9drLM/the-body-shop.webp",
+      "coupons": [
+        {
+          "coupon-code": "BODYSHOP20",
+          "description": "20% off on skincare products.",
+          "expiry-date": "2024-11-30",
+          "condition": "Valid only on skincare items.",
+          "coupon_type": "Percentage"
+        }
+      ],
+      "shop-Link": "https://www.thebodyshop.com/en-gb/?global=true",
+      "category": "Beauty & Health",
+      "isSaleOn": true
+    },
+    {
+      "_id": "10",
       "brand_name": "Garnier",
       "rating": 4.9,
       "description": "All your skincare products in one place.",
@@ -171,23 +225,23 @@
       "isSaleOn": false
     },
     {
-      "_id": "10",
-      "brand_name": "The Body Shop",
-      "rating": 4.6,
-      "description": "Beauty products and skincare solutions for every skin type.",
-      "brand_logo": "https://i.ibb.co.com/Vm9drLM/the-body-shop.webp",
+      "_id": "11",
+      "brand_name": "Walmart",
+      "rating": 4.4,
+      "description": "All your necessary products are available in wholesale price.",
+      "brand_logo": "https://i.ibb.co.com/RDq8ggQ/walmart.png",
       "coupons": [
         {
-          "coupon-code": "BODYSHOP20",
-          "description": "20% off on skincare products.",
-          "expiry-date": "2024-11-30",
-          "condition": "Valid only on skincare items.",
-          "coupon_type": "Percentage"
+          "coupon-code": "Walmart5",
+          "description": "$5 off on all products.",
+          "expiry-date": "2024-11-22",
+          "condition": "Valid on orders over $100.",
+          "coupon_type": "Fixed Amount"
         }
       ],
-      "shop-Link": "https://www.thebodyshop.com/en-gb/?global=true",
-      "category": "Beauty & Health",
-      "isSaleOn": true
+      "shop-Link": "https://www.walmart.com/",
+      "category": "Wholesale",
+      "isSaleOn": false
     }
   ]
   

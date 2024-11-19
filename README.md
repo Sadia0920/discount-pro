@@ -17,6 +17,7 @@
 - React Router
 - React Icon
 - React Rating 
+- React Fast Marquee
 - Recharts
 
 

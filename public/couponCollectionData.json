@@ -1,29 +1,29 @@
 [
     {
       "_id": "1",
-      "brand_name": "TechGiant",
+      "brand_name": "ASUS",
       "rating": 4.7,
       "description": "Leading tech brand offering innovative gadgets.",
-      "brand_logo": "https://example.com/logos/techgiant.png",
+      "brand_logo": "https://i.ibb.co.com/Q6JzxYx/asus.png",
       "coupons": [
         {
-          "coupon-code": "TG15OFF",
+          "coupon-code": "ASUS15OFF",
           "description": "15% off on your first purchase.",
           "expiry-date": "2024-12-31",
           "condition": "Minimum purchase of $100 required.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://example.com/shop/techgiant",
+      "shop-Link": "https://www.asus.com/bd/?gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7rSzp9BpsX_7EbM5x2PXI3H6rcz6yMngx8OvvGZvpqNk7FmLOBTopUaAs2cEALw_wcB",
       "category": "Electronics",
       "isSaleOn": true
     },
     {
       "_id": "2",
-      "brand_name": "Fashionista",
+      "brand_name": "Shein",
       "rating": 4.5,
       "description": "Trendy fashion and accessories for all seasons.",
-      "brand_logo": "https://example.com/logos/fashionista.png",
+      "brand_logo": "https://i.ibb.co.com/WtZN2Px/shein.png",
       "coupons": [
         {
           "coupon-code": "FASHION20",
@@ -33,35 +33,35 @@
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://example.com/shop/fashionista",
+      "shop-Link": "https://m.shein.com/?lang=en",
       "category": "Fashion",
       "isSaleOn": false
     },
     {
       "_id": "3",
-      "brand_name": "Healthy Eats",
+      "brand_name": "Domino's",
       "rating": 4.2,
-      "description": "Healthy, organic food for a better lifestyle.",
-      "brand_logo": "https://example.com/logos/healthyeats.png",
+      "description": "Tasty, delicious food everyday.",
+      "brand_logo": "https://i.ibb.co.com/bvVGCc2/dominos.png",
       "coupons": [
         {
           "coupon-code": "EAT5",
-          "description": "$5 off your next grocery order.",
+          "description": "$5 off your next order.",
           "expiry-date": "2024-11-25",
-          "condition": "Only valid for grocery items.",
+          "condition": "Only valid for pizza.",
           "coupon_type": "Fixed Amount"
         }
       ],
-      "shop-Link": "https://example.com/shop/healthyeats",
-      "category": "Food & Beverage",
+      "shop-Link": "https://m.dominos.com.bd/postorder-ui/login",
+      "category": "Fast Food & Beverage",
       "isSaleOn": true
     },
     {
       "_id": "4",
-      "brand_name": "HomeStyle",
+      "brand_name": "IKEA",
       "rating": 4.8,
       "description": "Stylish furniture and home decor for your living spaces.",
-      "brand_logo": "https://example.com/logos/homestyle.png",
+      "brand_logo": "https://i.ibb.co.com/hggDjMX/ikea.png",
       "coupons": [
         {
           "coupon-code": "HOME30",
@@ -71,121 +71,121 @@
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://example.com/shop/homestyle",
+      "shop-Link": "https://www.ikea.com/",
       "category": "Home & Living",
       "isSaleOn": true
     },
     {
       "_id": "5",
-      "brand_name": "AutoWorld",
+      "brand_name": "Bata",
       "rating": 4.6,
-      "description": "Car accessories and parts for all vehicle types.",
-      "brand_logo": "https://example.com/logos/autoworld.png",
+      "description": "Shoes for man, women and kids.",
+      "brand_logo": "https://i.ibb.co.com/KqLDx8G/bata.webp",
       "coupons": [
         {
-          "coupon-code": "AUTO10",
-          "description": "10% off on all car accessories.",
+          "coupon-code": "BATA10",
+          "description": "10% off on all shoes.",
           "expiry-date": "2024-11-28",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://example.com/shop/autoworld",
-      "category": "Automotive",
-      "isSaleOn": false
+      "shop-Link": "https://www.batabd.com/?variant=51672865079664&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7o3ZTG-gyJX-kud3YP3GYVd6wlEzNIoQjx7e2KzKV7URXmA__a3Z7oaAg3JEALw_wcB",
+      "category": "Fashion",
+      "isSaleOn": true
     },
     {
       "_id": "6",
-      "brand_name": "Gadget Guru",
-      "rating": 4.3,
+      "brand_name": "Apple",
+      "rating": 4.6,
       "description": "Latest gadgets and tech for modern enthusiasts.",
-      "brand_logo": "https://example.com/logos/gadgetguru.png",
+      "brand_logo": "https://i.ibb.co.com/GFTJCb7/apple.png",
       "coupons": [
         {
-          "coupon-code": "GG10",
+          "coupon-code": "Apple10",
           "description": "10% off on all electronics.",
           "expiry-date": "2024-12-01",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://example.com/shop/gadgetguru",
+      "shop-Link": "https://www.apple.com/",
       "category": "Electronics",
-      "isSaleOn": false
+      "isSaleOn": true
     },
     {
       "_id": "7",
-      "brand_name": "FreshMart",
+      "brand_name": "Sawapno",
       "rating": 4.1,
       "description": "Fresh produce, dairy, and groceries delivered to your door.",
-      "brand_logo": "https://example.com/logos/freshmart.png",
+      "brand_logo": "https://i.ibb.co.com/bXKYQq9/sopno.webp",
       "coupons": [
         {
-          "coupon-code": "FRESH10",
+          "coupon-code": "Shwapno10",
           "description": "10% off on fresh groceries.",
           "expiry-date": "2024-11-20",
           "condition": "Order over $50.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://example.com/shop/freshmart",
+      "shop-Link": "https://www.shwapno.com/",
       "category": "Food & Beverage",
       "isSaleOn": true
     },
     {
       "_id": "8",
-      "brand_name": "Sportify",
+      "brand_name": "H & M",
       "rating": 4.4,
-      "description": "Sporting goods for every athlete.",
-      "brand_logo": "https://example.com/logos/sportify.png",
+      "description": "Some amazing clothing items for everyone.",
+      "brand_logo": "https://i.ibb.co.com/TmHrRcV/H-M.png",
       "coupons": [
         {
-          "coupon-code": "SPORT15",
-          "description": "15% off on all fitness equipment.",
+          "coupon-code": "H&M15",
+          "description": "15% off on all items.",
           "expiry-date": "2024-12-15",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://example.com/shop/sportify",
-      "category": "Sports",
-      "isSaleOn": false
+      "shop-Link": "https://www2.hm.com/en_us/index.html",
+      "category": "Fashion",
+      "isSaleOn": true
     },
     {
       "_id": "9",
-      "brand_name": "Book Haven",
+      "brand_name": "Garnier",
       "rating": 4.9,
-      "description": "All your reading needs in one place.",
-      "brand_logo": "https://example.com/logos/bookhaven.png",
+      "description": "All your skincare products in one place.",
+      "brand_logo": "https://i.ibb.co.com/jw1qnr5/garnier.png",
       "coupons": [
         {
-          "coupon-code": "BOOK5",
-          "description": "$5 off on all books.",
+          "coupon-code": "SkinCare5",
+          "description": "$5 off on all products.",
           "expiry-date": "2024-11-22",
           "condition": "Valid on orders over $30.",
           "coupon_type": "Fixed Amount"
         }
       ],
-      "shop-Link": "https://example.com/shop/bookhaven",
-      "category": "Books & Education",
+      "shop-Link": "https://www.garnierusa.com/",
+      "category": "Beauty and Health",
       "isSaleOn": false
     },
     {
       "_id": "10",
-      "brand_name": "Beauty Bliss",
+      "brand_name": "The Body Shop",
       "rating": 4.6,
       "description": "Beauty products and skincare solutions for every skin type.",
-      "brand_logo": "https://example.com/logos/beautybliss.png",
+      "brand_logo": "https://i.ibb.co.com/Vm9drLM/the-body-shop.webp",
       "coupons": [
         {
-          "coupon-code": "BLISS20",
+          "coupon-code": "BODYSHOP20",
           "description": "20% off on skincare products.",
           "expiry-date": "2024-11-30",
           "condition": "Valid only on skincare items.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://example.com/shop/beautybliss",
+      "shop-Link": "https://www.thebodyshop.com/en-gb/?global=true",
       "category": "Beauty & Health",
       "isSaleOn": true
     }

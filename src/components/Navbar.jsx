@@ -13,17 +13,17 @@ export default function Navbar() {
        <p>Home</p>
        </NavLink>
 
-      <NavLink to='/brands' className='flex items-center md:ml-5 text-gray-400 text-lg font-semibold'>
+      <NavLink to='/brands' className='flex items-center lg:ml-5 text-gray-400 text-lg font-semibold'>
       <TbBrandBinance></TbBrandBinance>
       <p> Brands </p>
       </NavLink>
     
-      <NavLink className='flex items-center md:ml-5 text-gray-400 text-lg font-semibold' to='/about'>
+      <NavLink className='flex items-center lg:ml-5 text-gray-400 text-lg font-semibold' to='/about'>
       <VscWorkspaceUnknown></VscWorkspaceUnknown>
       <p>About Dev</p>
       </NavLink> 
     
-      <NavLink className='flex items-center md:ml-5 text-gray-400 text-lg font-semibold' to='/myProfile'>
+      <NavLink className='flex items-center lg:ml-5 text-gray-400 text-lg font-semibold' to='/myProfile'>
       <TbUserCircle></TbUserCircle>
       <p>My Profile</p>
       </NavLink>

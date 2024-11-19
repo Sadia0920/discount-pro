@@ -4,7 +4,7 @@ export default function BrandsOnSale({item}) {
     return (
       <div>
        {
-       isSaleOn ? <>
+       isSaleOn && <>
        <div className="card bg-base-100  shadow-xl">
   <figure className="px-7 pt-7 ">
     <img
@@ -19,9 +19,7 @@ export default function BrandsOnSale({item}) {
   </div>
 </div>
     </>
-    :
-    <>
-    </>
+   
 }
 </div>
     )

@@ -3,13 +3,31 @@ import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { RiCoupon3Fill } from 'react-icons/ri'
 import Header from './Header'
+import { TbBrandBinance, TbHome, TbUserCircle} from 'react-icons/tb'
+import { VscWorkspaceUnknown } from 'react-icons/vsc'
 
 export default function Navbar() {
     const links = <>
-    <NavLink className='text-gray-400 text-lg font-semibold' to='/'>Home</NavLink>
-    <NavLink className='ml-5 text-gray-400 text-lg font-semibold' to='/brands'>Brands</NavLink>
-    <NavLink className='ml-5 text-gray-400 text-lg font-semibold' to='/about'>About</NavLink>
-    <NavLink className='ml-5 text-gray-400 text-lg font-semibold' to='/myProfile'>My Profile</NavLink>
+      <NavLink className='text-gray-400 text-lg font-semibold flex items-center' to='/'>
+      <TbHome></TbHome>
+       <p>Home</p>
+       </NavLink>
+
+      <NavLink to='/brands' className='flex items-center md:ml-5 text-gray-400 text-lg font-semibold'>
+      <TbBrandBinance></TbBrandBinance>
+      <p> Brands </p>
+      </NavLink>
+    
+      <NavLink className='flex items-center md:ml-5 text-gray-400 text-lg font-semibold' to='/about'>
+      <VscWorkspaceUnknown></VscWorkspaceUnknown>
+      <p>About Dev</p>
+      </NavLink> 
+    
+      <NavLink className='flex items-center md:ml-5 text-gray-400 text-lg font-semibold' to='/myProfile'>
+      <TbUserCircle></TbUserCircle>
+      <p>My Profile</p>
+      </NavLink>
+    
     </>
   return (
   <div>

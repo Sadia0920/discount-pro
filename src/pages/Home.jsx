@@ -1,7 +1,11 @@
 import React from 'react'
+import Banner from '../components/banner'
+
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Banner></Banner>
+    </div>
   )
 }

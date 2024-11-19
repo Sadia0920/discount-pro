@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { RiCoupon3Fill } from 'react-icons/ri'
 import Header from './Header'
@@ -66,8 +66,8 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-blue-500 text-white font-semibold mr-3">Register</a>
-    <a className="btn bg-blue-500 text-white font-semibold">Login</a>
+    <Link to='/register' className="btn bg-blue-500 text-white font-semibold mr-3">Register</Link>
+    <Link to='/login' className="btn bg-blue-500 text-white font-semibold">Login</Link>
   </div>
 </div>
     </div>

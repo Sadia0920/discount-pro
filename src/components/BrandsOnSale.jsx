@@ -14,7 +14,7 @@ export default function BrandsOnSale({item}) {
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title text-2xl font-bold">{brand_name}</h2>
-    <p className=" text-gray-500 text-lg font-semibold">Coupons available: {coupons.length}</p>
+    <p className=" text-gray-500 text-lg font-semibold">Available Coupons: {coupons.length}</p>
     <p className="text-xl font-bold">{category}</p>
   </div>
 </div>

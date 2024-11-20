@@ -1,12 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { toast } from "react-toastify";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export default function Register() {
 
-  const {user,setUser,createUser,loginWithGoogle} = useContext(AuthContext)
+  const {updateUserInfo,user,setUser,createUser,loginWithGoogle} = useContext(AuthContext)
   const navigate = useNavigate()
+  const [showPassword,setShowPassword]=useState(false)
 
   const handleGoogleLogin = () => {
     loginWithGoogle()
@@ -36,6 +38,13 @@ export default function Register() {
 
      const regex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 
+     if(!regex.test(password)){
+      toast.error(`Please give a valid password with at lease one Uppercase, one Lowercase and length must be 6 character or more.`,{
+        position:'top-center'
+     })
+     return
+     }
+
     createUser(email,password)
     .then((res) => {
       console.log(res.user)
@@ -45,11 +54,23 @@ export default function Register() {
       toast.success(`successfully register done`,{
          position:'top-center'
       })
+      const profile = {
+        displayName: name,
+        photoURL: photo
+      }
+      updateUserInfo(profile)
+      .then((res)=>{
+        // console.log(res.user)
+        // setUser(res.user)
+      })
+      .catch(err => {
+        // setUser(null)
+      })
   })
   .catch(error => {
       console.log(error.message)
       setUser(null)
-      toast.error(`Register Unsuccessful`,{
+      toast.error(`Register Unsuccessful ${error.message}`,{
          position:'top-center'
       })
   })
@@ -82,11 +103,12 @@ export default function Register() {
       </label>
       <input type="email" name='email' placeholder="email" className="input input-bordered" required />
     </div>
-    <div className="form-control">
+    <div className="form-control relative">
       <label className="label">
         <span className="label-text">Password</span>
       </label>
-      <input type="password" name='password' placeholder="password" className="input input-bordered" required />
+      <input type={showPassword?'text':'password'} name='password' placeholder="password" className="input input-bordered" required />
+      <a onClick={()=>setShowPassword(!showPassword)} className="btn btn-xs text-lg absolute mt-12 ml-60">{showPassword?<FaEyeSlash></FaEyeSlash>:<FaEye></FaEye>}</a>
       
     </div>
     <div className="form-control mt-6">

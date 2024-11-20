@@ -56,12 +56,20 @@ export default function Login() {
 
   const handleResetPassword = () => {
     const email = emailRef.current.value;
-    passwordReset(email)
+    if(!email){
+      toast.error(`please give a valid email`,{
+        position:'top-center'
+     })
+    }
+    else{
+     passwordReset(email)
     .then(() => {
       toast.success(`Password reset email successfully sent, please check your email`,{
         position:'top-center'
      })
     })
+    }
+    
   }
 
   return (

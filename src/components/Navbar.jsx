@@ -36,11 +36,20 @@ export default function Navbar() {
       <VscWorkspaceUnknown></VscWorkspaceUnknown>
       <p>About Dev</p>
       </NavLink> 
+
+      <NavLink className='flex items-center lg:ml-5 text-gray-400 text-lg font-semibold' to='/coupon'>
+      <VscWorkspaceUnknown></VscWorkspaceUnknown>
+      <p>Coupon</p>
+      </NavLink> 
     
-      <NavLink className='flex items-center lg:ml-5 text-gray-400 text-lg font-semibold' to='/myProfile'>
+      {
+        user && <>
+        <NavLink className='flex items-center lg:ml-5 text-gray-400 text-lg font-semibold' to='/myProfile'>
       <TbUserCircle></TbUserCircle>
       <p>My Profile</p>
       </NavLink>
+        </>
+      }
     
     </>
   return (

@@ -19,6 +19,7 @@
 - React Rating 
 - React Fast Marquee
 - React Tostify
+- React Copt to clipboard
 
 
 

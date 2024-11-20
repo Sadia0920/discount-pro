@@ -5,7 +5,7 @@ import discount from '../assets/discount.jpg'
 
 export default function Banner() {
   return (
-  <div className='w-10/12 mx-auto'>
+  <div className='w-10/12 mx-auto mt-8'>
   <div className="carousel w-full rounded-2xl">
   <div id="slide1" className="carousel-item relative h-[500px] w-full ">
     <img

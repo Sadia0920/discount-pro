@@ -7,21 +7,21 @@
       "brand_logo": "https://i.ibb.co.com/Q6JzxYx/asus.png",
       "coupons": [
         {
-          "coupon-code": "ASUS15OFF",
-          "description": "15% off on your first purchase.",
-          "expiry-date": "2024-12-31",
+          "couponCode": "ASUS15OFF",
+          "description": "15% off on first buy.",
+          "expiry_date": "2024-12-31",
           "condition": "Minimum purchase of $100 required.",
           "coupon_type": "Percentage"
         },
         {
-          "coupon-code": "ASUS25OFF",
+          "couponCode": "ASUS25OFF",
           "description": "25% off on laptop.",
-          "expiry-date": "2024-12-31",
+          "expiry_date": "2024-12-31",
           "condition": "Minimum purchase of $200 required.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://www.asus.com/bd/?gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7rSzp9BpsX_7EbM5x2PXI3H6rcz6yMngx8OvvGZvpqNk7FmLOBTopUaAs2cEALw_wcB",
+      "shop_Link": "https://www.asus.com/bd/?gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7rSzp9BpsX_7EbM5x2PXI3H6rcz6yMngx8OvvGZvpqNk7FmLOBTopUaAs2cEALw_wcB",
       "category": "Electronics",
       "isSaleOn": true
     },
@@ -33,14 +33,14 @@
       "brand_logo": "https://i.ibb.co.com/WtZN2Px/shein.png",
       "coupons": [
         {
-          "coupon-code": "FASHION20",
+          "couponCode": "FASHION20",
           "description": "20% off on all apparel.",
-          "expiry-date": "2024-11-30",
+          "expiry_date": "2024-11-30",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://m.shein.com/?lang=en",
+      "shop_Link": "https://m.shein.com/?lang=en",
       "category": "Fashion",
       "isSaleOn": true
     },
@@ -52,21 +52,21 @@
       "brand_logo": "https://i.ibb.co.com/bvVGCc2/dominos.png",
       "coupons": [
         {
-          "coupon-code": "EAT5",
-          "description": "$5 off your next order.",
-          "expiry-date": "2024-11-25",
+          "couponCode": "EAT5",
+          "description": "$5 off on your next order.",
+          "expiry_date": "2024-11-25",
           "condition": "Only valid for pizza.",
           "coupon_type": "Fixed Amount"
         },
         {
-          "coupon-code": "EAT10",
+          "couponCode": "EAT10",
           "description": "$10 off on special pizza.",
-          "expiry-date": "2024-11-25",
+          "expiry_date": "2024-11-25",
           "condition": "Only valid for pizza.",
           "coupon_type": "Fixed Amount"
         }
       ],
-      "shop-Link": "https://m.dominos.com.bd/postorder-ui/login",
+      "shop_Link": "https://m.dominos.com.bd/postorder-ui/login",
       "category": "Fast Food & Beverage",
       "isSaleOn": true
     },
@@ -78,14 +78,14 @@
       "brand_logo": "https://i.ibb.co.com/hggDjMX/ikea.png",
       "coupons": [
         {
-          "coupon-code": "HOME30",
+          "couponCode": "HOME30",
           "description": "30% off on home furniture.",
-          "expiry-date": "2024-12-10",
+          "expiry_date": "2024-12-10",
           "condition": "Minimum purchase of $200.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://www.ikea.com/",
+      "shop_Link": "https://www.ikea.com/",
       "category": "Home & Living",
       "isSaleOn": true
     },
@@ -97,28 +97,28 @@
       "brand_logo": "https://i.ibb.co.com/KqLDx8G/bata.webp",
       "coupons": [
         {
-          "coupon-code": "BATA10",
+          "couponCode": "BATA10",
           "description": "10% off on all shoes for man and woman.",
-          "expiry-date": "2024-11-28",
+          "expiry_date": "2024-11-28",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         },
         {
-          "coupon-code": "BATA15",
+          "couponCode": "BATA15",
           "description": "15% off on all shoes for kids.",
-          "expiry-date": "2024-11-28",
+          "expiry_date": "2024-11-28",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         },
         {
-          "coupon-code": "BATA30",
+          "couponCode": "BATA30",
           "description": "30% off on all winter shoes.",
-          "expiry-date": "2024-11-28",
+          "expiry_date": "2024-11-28",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://www.batabd.com/?variant=51672865079664&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7o3ZTG-gyJX-kud3YP3GYVd6wlEzNIoQjx7e2KzKV7URXmA__a3Z7oaAg3JEALw_wcB",
+      "shop_Link": "https://www.batabd.com/?variant=51672865079664&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7o3ZTG-gyJX-kud3YP3GYVd6wlEzNIoQjx7e2KzKV7URXmA__a3Z7oaAg3JEALw_wcB",
       "category": "Fashion",
       "isSaleOn": true
     },
@@ -130,14 +130,14 @@
       "brand_logo": "https://i.ibb.co.com/GFTJCb7/apple.png",
       "coupons": [
         {
-          "coupon-code": "Apple10",
+          "couponCode": "Apple10",
           "description": "10% off on all electronics.",
-          "expiry-date": "2024-12-01",
+          "expiry_date": "2024-12-01",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://www.apple.com/",
+      "shop_Link": "https://www.apple.com/",
       "category": "Electronics",
       "isSaleOn": true
     },
@@ -149,21 +149,21 @@
       "brand_logo": "https://i.ibb.co.com/bXKYQq9/sopno.webp",
       "coupons": [
         {
-          "coupon-code": "Shwapno10",
+          "couponCode": "Shwapno10",
           "description": "10% off on fresh groceries.",
-          "expiry-date": "2024-11-20",
+          "expiry_date": "2024-11-20",
           "condition": "Order over $50.",
           "coupon_type": "Percentage"
         },
         {
-          "coupon-code": "Shwapno5",
-          "description": "5% off on groceries.",
-          "expiry-date": "2024-11-20",
+          "couponCode": "Shwapno5",
+          "description": "5% off on packet groceries.",
+          "expiry_date": "2024-11-20",
           "condition": "Order over $30.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://www.shwapno.com/",
+      "shop_Link": "https://www.shwapno.com/",
       "category": "Grocery",
       "isSaleOn": true
     },
@@ -175,14 +175,14 @@
       "brand_logo": "https://i.ibb.co.com/TmHrRcV/H-M.png",
       "coupons": [
         {
-          "coupon-code": "H&M15",
+          "couponCode": "H&M15",
           "description": "15% off on all items.",
-          "expiry-date": "2024-12-15",
+          "expiry_date": "2024-12-15",
           "condition": "No minimum purchase.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://www2.hm.com/en_us/index.html",
+      "shop_Link": "https://www2.hm.com/en_us/index.html",
       "category": "Fashion",
       "isSaleOn": true
     },
@@ -194,14 +194,14 @@
       "brand_logo": "https://i.ibb.co.com/Vm9drLM/the-body-shop.webp",
       "coupons": [
         {
-          "coupon-code": "BODYSHOP20",
+          "couponCode": "BODYSHOP20",
           "description": "20% off on skincare products.",
-          "expiry-date": "2024-11-30",
+          "expiry_date": "2024-11-30",
           "condition": "Valid only on skincare items.",
           "coupon_type": "Percentage"
         }
       ],
-      "shop-Link": "https://www.thebodyshop.com/en-gb/?global=true",
+      "shop_Link": "https://www.thebodyshop.com/en-gb/?global=true",
       "category": "Beauty & Health",
       "isSaleOn": true
     },
@@ -213,14 +213,14 @@
       "brand_logo": "https://i.ibb.co.com/jw1qnr5/garnier.png",
       "coupons": [
         {
-          "coupon-code": "SkinCare5",
+          "couponCode": "SkinCare5",
           "description": "$5 off on all products.",
-          "expiry-date": "2024-11-22",
+          "expiry_date": "2024-11-22",
           "condition": "Valid on orders over $30.",
           "coupon_type": "Fixed Amount"
         }
       ],
-      "shop-Link": "https://www.garnierusa.com/",
+      "shop_Link": "https://www.garnierusa.com/",
       "category": "Beauty and Health",
       "isSaleOn": false
     },
@@ -232,14 +232,14 @@
       "brand_logo": "https://i.ibb.co.com/RDq8ggQ/walmart.png",
       "coupons": [
         {
-          "coupon-code": "Walmart5",
+          "couponCode": "Walmart5",
           "description": "$5 off on all products.",
-          "expiry-date": "2024-11-22",
+          "expiry_date": "2024-11-22",
           "condition": "Valid on orders over $100.",
           "coupon_type": "Fixed Amount"
         }
       ],
-      "shop-Link": "https://www.walmart.com/",
+      "shop_Link": "https://www.walmart.com/",
       "category": "Wholesale",
       "isSaleOn": false
     }

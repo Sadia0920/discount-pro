@@ -7,6 +7,7 @@ import MyProfile from "../pages/MyProfile"
 import Login from "../pages/Login"
 import Register from "../pages/Register"
 import PrivateRoute from "./PrivateRoute"
+import CouponPage from "../pages/CouponPage"
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
             {
                 path:'/login',
                 element:<Login></Login>
+            },
+            {
+                path:'/coupon',
+                element:<CouponPage></CouponPage>,
+                loader:() => fetch('/couponCollectionData.json')
             }
         ]
     }

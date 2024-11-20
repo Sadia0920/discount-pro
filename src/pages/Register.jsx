@@ -1,12 +1,31 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 export default function Register() {
 
-  const {createUser} = useContext(AuthContext)
+  const {user,setUser,createUser,loginWithGoogle} = useContext(AuthContext)
   const navigate = useNavigate()
 
+  const handleGoogleLogin = () => {
+    loginWithGoogle()
+    .then((res) => {
+      console.log(res.user)
+      setUser(res.user)
+      toast.success(`successfully login`,{
+         position:'top-center'
+      })
+      navigate('/')
+  })
+  .catch(error => {
+      console.log(error.message)
+      setUser(null)
+      toast.error(`login Unsuccessful`,{
+        position:'top-center'
+      })
+  })
+  }
   const handleRegister = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -18,11 +37,19 @@ export default function Register() {
     createUser(email,password)
     .then((res) => {
       console.log(res.user)
+      setUser(res.user)
       event.target.reset();
       navigate('/')
+      toast.success(`successfully register done`,{
+         position:'top-center'
+      })
   })
   .catch(error => {
       console.log(error.message)
+      setUser(null)
+      toast.error(`Register Unsuccessful`,{
+         position:'top-center'
+      })
   })
   }
 
@@ -61,10 +88,15 @@ export default function Register() {
       
     </div>
     <div className="form-control mt-6">
-      <button className="btn btn-primary">Login</button>
+      <button className="btn btn-primary">Register</button>
     </div>
-    <p className='font-semibold text-center'>Already have an account? please <Link className='border-b-2 border-blue-600 text-blue-700' to='/login'>Register</Link></p>
   </form>
+  <div className="mx-auto">
+    <button onClick={handleGoogleLogin} className="btn btn-primary px-[70px] mb-4">
+    <i className="fa-brands fa-google"></i>
+    Login With Google</button>
+  </div>
+  <p className='font-semibold text-center px-5 mb-6'>Already have an account? please <Link className='border-b-2 border-blue-600 text-blue-700' to='/login'>Login</Link></p>
 </div>
 </div>
 </div>

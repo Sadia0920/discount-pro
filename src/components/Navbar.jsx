@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { RiCoupon3Fill } from 'react-icons/ri'
 import Header from './Header'
 import { TbBrandBinance, TbHome, TbUserCircle} from 'react-icons/tb'
 import { VscWorkspaceUnknown } from 'react-icons/vsc'
+import { AuthContext } from '../provider/AuthProvider'
 
 export default function Navbar() {
+  const {user,signOutUser}=useContext(AuthContext)
+
+  const handleSignOut = () => {
+    signOutUser()
+    .then((res) => {
+      console.log(res.user)
+    })
+    .catch(err => {
+      console.log(err.message)
+    })
+  }
+
+
     const links = <>
       <NavLink className='text-gray-400 text-lg font-semibold flex items-center' to='/'>
       <TbHome></TbHome>
@@ -31,7 +45,9 @@ export default function Navbar() {
     </>
   return (
   <div>
-    <Header></Header>
+    {
+      user && <Header></Header>
+    }
   <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -66,10 +82,16 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end md:flex-row md:ml-0 ml-8 flex-col">
-    <Link to='/register' className="btn bg-blue-500 text-white font-semibold md:mr-3">Register</Link>
+    {
+      user? <Link onClick={handleSignOut} className="btn bg-blue-500 text-white font-semibold md:mr-3">LogOut</Link>
+       :
+      <>
+      <Link to='/register' className="btn bg-blue-500 text-white font-semibold md:mr-3">Register</Link>
     <Link to='/login' className="btn bg-blue-500 text-white px-7 font-semibold ">Login</Link>
-  </div>
-</div>
+      </>
+    }
+    </div>
+    </div>
     </div>
   )
 }

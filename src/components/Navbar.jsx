@@ -56,8 +56,8 @@ export default function Navbar() {
       </ul>
     </div>
     <div className='flex items-center justify-center'>
-    <div className='text-2xl text-blue-800'><RiCoupon3Fill></RiCoupon3Fill></div>
-    <a className="pl-2 btn btn-ghost text-2xl font-bold text-blue-600">Discount PRO</a>
+    <div className='md:ml-0 ml-5 text-xl md:text-2xl text-blue-800'><RiCoupon3Fill></RiCoupon3Fill></div>
+    <a className="pl-2 btn btn-ghost text-xl md:text-2xl font-bold text-blue-600">Discount PRO</a>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -65,9 +65,9 @@ export default function Navbar() {
      {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <Link to='/register' className="btn bg-blue-500 text-white font-semibold mr-3">Register</Link>
-    <Link to='/login' className="btn bg-blue-500 text-white font-semibold">Login</Link>
+  <div className="navbar-end md:flex-row md:ml-0 ml-8 flex-col">
+    <Link to='/register' className="btn bg-blue-500 text-white font-semibold md:mr-3">Register</Link>
+    <Link to='/login' className="btn bg-blue-500 text-white px-7 font-semibold ">Login</Link>
   </div>
 </div>
     </div>

@@ -15,7 +15,7 @@ export default function AllBrandsInfo({item}) {
       src={brand_logo}
       alt="Brand Logo" />
   </figure>
-  <h4 className='text-xl font-bold text-left my-4'>{brand_name}</h4>
+  <h4 className='text-xl font-bold text-center lg:text-left my-4'>{brand_name}</h4>
   <h3  className='text-lg font-semibold mt-2'>Rating:</h3>
       <div className='flex items-center mb-2'>
       <Rating

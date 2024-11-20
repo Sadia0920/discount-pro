@@ -6,6 +6,7 @@ import About from "../pages/About"
 import MyProfile from "../pages/MyProfile"
 import Login from "../pages/Login"
 import Register from "../pages/Register"
+import PrivateRoute from "./PrivateRoute"
 
 const router = createBrowserRouter([
     {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/myProfile',
-                element:<MyProfile></MyProfile>
+                element:<PrivateRoute><MyProfile></MyProfile></PrivateRoute>
             },
             {
                 path:'/register',

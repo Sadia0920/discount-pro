@@ -34,6 +34,8 @@ export default function Register() {
     const photo = event.target.photo.value;
     console.log(email,password,name,photo);
 
+     const regex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+
     createUser(email,password)
     .then((res) => {
       console.log(res.user)

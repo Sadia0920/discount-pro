@@ -8,18 +8,18 @@ import { VscWorkspaceUnknown } from 'react-icons/vsc'
 import { AuthContext } from '../provider/AuthProvider'
 
 export default function Navbar() {
-  const {user,signOutUser}=useContext(AuthContext)
+  const {setUser,user,signOutUser}=useContext(AuthContext)
 
   const handleSignOut = () => {
     signOutUser()
-    .then((res) => {
-      console.log(res.user)
+    .then(() => {
+      console.log('signOut Done')
+      setUser(null)
     })
     .catch(err => {
       console.log(err.message)
     })
   }
-
 
     const links = <>
       <NavLink className='text-gray-400 text-lg font-semibold flex items-center' to='/'>
@@ -83,7 +83,11 @@ export default function Navbar() {
   </div>
   <div className="navbar-end md:flex-row md:ml-0 ml-8 flex-col">
     {
-      user? <Link onClick={handleSignOut} className="btn bg-blue-500 text-white font-semibold md:mr-3">LogOut</Link>
+      user? <>
+      <img className='w-8 h-8 rounded-full' src={user.photoURL} alt="" />
+      <p className='mx-2'>{user.email}</p>
+      <Link onClick={handleSignOut} className="btn bg-blue-500 text-white font-semibold md:mr-3">LogOut</Link>
+      </>
        :
       <>
       <Link to='/register' className="btn bg-blue-500 text-white font-semibold md:mr-3">Register</Link>

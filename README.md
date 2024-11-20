@@ -18,7 +18,7 @@
 - React Icon
 - React Rating 
 - React Fast Marquee
-- Recharts
+- React Tostify
 
 
 

@@ -1,8 +1,13 @@
+import { useState } from "react"
+import Rating from "react-rating"
+
 export default function AllBrandsInfo({item}) {
     const {brand_name,rating,description,brand_logo,isSaleOn} = item
+    const [addRating,setAddRating]=useState(0);
+
   return (
   <div>
-  <div className="card items-center lg:card-side bg-base-100 shadow-xl py-8 px-20 my-5">
+  <div className="border-2 border-gray-300 card items-center lg:card-side bg-base-100 shadow-xl py-8 px-20 my-5">
   <div>
   <figure>
     <img
@@ -10,8 +15,18 @@ export default function AllBrandsInfo({item}) {
       src={brand_logo}
       alt="Brand Logo" />
   </figure>
-  <h4 className='text-xl font-bold text-center my-4'>{brand_name}</h4>
-  <p className='text-gray-500 text-lg font-bold text-center'>Rating: {rating}</p>
+  <h4 className='text-xl font-bold text-left my-4'>{brand_name}</h4>
+  <h3  className='text-lg font-semibold mt-2'>Rating:</h3>
+      <div className='flex items-center mb-2'>
+      <Rating
+        className='text-yellow-300'
+        initialRating={rating}
+        onChange={(rating) => setAddRating(rating)}
+        emptySymbol = "fa-regular fa-star"
+        fullSymbol = "fa-solid fa-star"
+        />
+        <p className='ml-3 font-semibold'>{rating} Stars</p>
+      </div>
   </div>
   <div className="card-body lg:py-20 items-center">
     <h2 className="text-3xl font-bold text-center">{brand_name}</h2>

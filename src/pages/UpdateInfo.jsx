@@ -11,7 +11,6 @@ export default function UpdateInfo() {
         event.preventDefault();
         const name = event.target.name.value;
         const photo = event.target.photo.value;
-        console.log(name,photo)
         navigate('/myProfile')
 
         const profile = {
@@ -20,11 +19,8 @@ export default function UpdateInfo() {
           }
           updateUserInfo(profile)
           .then((res)=>{
-            console.log(res.user)
-            setUser(res.user)
           })
           .catch(err => {
-            // setUser(null)
           })
     }
   return (

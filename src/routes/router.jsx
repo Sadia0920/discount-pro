@@ -9,11 +9,14 @@ import Register from "../pages/Register"
 import PrivateRoute from "./PrivateRoute"
 import CouponPage from "../pages/CouponPage"
 import UpdateInfo from "../pages/UpdateInfo"
+import ForgetPassword from "../components/ForgetPassword"
+import Error from "../pages/Error"
 
 const router = createBrowserRouter([
     {
         path:'/',
         element:<MainLayout></MainLayout>,
+        errorElement:<Error></Error>,
         children: [
             {
                 path:'/',
@@ -48,8 +51,12 @@ const router = createBrowserRouter([
             },
             {
                 path:'/updateInfo',
-                element:<UpdateInfo></UpdateInfo>
-            }
+                element:<PrivateRoute><UpdateInfo></UpdateInfo></PrivateRoute>
+            },
+            {
+                path:'/forgetPassword',
+                element:<ForgetPassword></ForgetPassword>
+            },
         ]
     }
 ])

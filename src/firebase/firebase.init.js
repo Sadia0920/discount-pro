@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCq-HnVOmdnBCUYc5asERAklsiKV0fhASs",
-  authDomain: "discount-pro-bbfa4.firebaseapp.com",
-  projectId: "discount-pro-bbfa4",
-  storageBucket: "discount-pro-bbfa4.firebasestorage.app",
-  messagingSenderId: "673278629935",
-  appId: "1:673278629935:web:eb9b2c4cbd7b254cb60eda"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase

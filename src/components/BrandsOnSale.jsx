@@ -19,7 +19,6 @@ export default function BrandsOnSale({item}) {
   </div>
 </div>
     </>
-   
 }
 </div>
     )

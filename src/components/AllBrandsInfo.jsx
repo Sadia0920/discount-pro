@@ -2,6 +2,7 @@ import { useContext, useState } from "react"
 import Rating from "react-rating"
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import 'animate.css';
 
 export default function AllBrandsInfo({item}) {
     const {_id,brand_name,rating,description,brand_logo,isSaleOn} = item
@@ -39,18 +40,18 @@ export default function AllBrandsInfo({item}) {
       {
         user?
         <>
-          <NavLink to={`/brand/${_id}`}><button className="btn btn-primary">View Coupons</button></NavLink>
+          <NavLink to={`/brand/${_id}`}><button className="btn btn-primary mb-16">View Coupons</button></NavLink>
         </>
         :
         <>
-           <NavLink to='/login'><button className="btn btn-primary">View Coupons</button></NavLink>
+           <NavLink to='/login'><button className="btn btn-primary mb-16">View Coupons</button></NavLink>
         </>
       }
      
      <div>
      {
         isSaleOn && <>
-        <p className='text-red-700 font-bold'>Sale is on !!</p>
+        <p className='text-red-700 font-bold animate-bounce'>Sale is on !!</p>
         </>
       }
      </div>

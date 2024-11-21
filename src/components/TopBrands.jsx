@@ -1,11 +1,14 @@
-import { Link } from "react-router-dom"
-
+import { useNavigate } from "react-router-dom"
 
 export default function TopBrands({item}) {
     const {brand_logo}=item
+    const navigate = useNavigate();
+    const handleGoBrands = () => {
+      navigate('/brands')
+    }
     return (
       <div>
-        <Link><img className='w-[90px] ml-8' src={brand_logo} alt="" /></Link>
+        <a onClick={handleGoBrands}><img className='w-[90px] ml-8' src={brand_logo} alt="" /></a>
       </div>
     )
   }

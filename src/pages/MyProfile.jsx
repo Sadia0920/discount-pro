@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function MyProfile() {
   const{user}=useContext(AuthContext)
   return (
-    <div className='mt-8 mb-64 md:mb-80 lg:mb-96'>
+    <div className='mt-8 mb-64 md:mb-80'>
       <img
       className='w-10/12 lg:w-9/12 mx-auto h-[400px] rounded-2xl relative'
       src={bg} alt="" />
@@ -16,7 +16,7 @@ export default function MyProfile() {
     <img
       src={user.photoURL}
       alt="User"
-      className="rounded-xl" />
+      className="rounded-xl max-w-[200px] " />
   </figure>
   <div className="card-body pt-0 items-center text-center">
     <h2 className="card-title text-2xl">{user.displayName}</h2>

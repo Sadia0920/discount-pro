@@ -6,14 +6,14 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export default function Register() {
 
-  const {updateUserInfo,user,setUser,createUser,loginWithGoogle} = useContext(AuthContext)
+  const {updateUserInfo,setUser,createUser,loginWithGoogle} = useContext(AuthContext)
   const navigate = useNavigate()
   const [showPassword,setShowPassword]=useState(false)
+  const [errorMessage,setErrorMessage]=useState('')
 
   const handleGoogleLogin = () => {
     loginWithGoogle()
     .then((res) => {
-      console.log(res.user)
       setUser(res.user)
       toast.success(`successfully login`,{
          position:'top-center'
@@ -21,7 +21,6 @@ export default function Register() {
       navigate('/')
   })
   .catch(error => {
-      console.log(error.message)
       setUser(null)
       toast.error(`login Unsuccessful`,{
         position:'top-center'
@@ -34,20 +33,18 @@ export default function Register() {
     const password = event.target.password.value;
     const name = event.target.name.value;
     const photo = event.target.photo.value;
-    console.log(email,password,name,photo);
+
+    setErrorMessage('')
 
      const regex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 
      if(!regex.test(password)){
-      toast.error(`Please give a valid password with at lease one Uppercase, one Lowercase and length must be 6 character or more.`,{
-        position:'top-center'
-     })
-     return
-     }
+      setErrorMessage('Please give a valid password with at lease one Uppercase, one Lowercase and length must be 6 character or more.')
+      return;
+    }
 
     createUser(email,password)
     .then((res) => {
-      console.log(res.user)
       setUser(res.user)
       event.target.reset();
       navigate('/')
@@ -59,16 +56,12 @@ export default function Register() {
         photoURL: photo
       }
       updateUserInfo(profile)
-      .then((res)=>{
-        // console.log(res.user)
-        // setUser(res.user)
+      .then(()=>{
       })
-      .catch(err => {
-        // setUser(null)
+      .catch(() => {
       })
   })
   .catch(error => {
-      console.log(error.message)
       setUser(null)
       toast.error(`Register Unsuccessful ${error.message}`,{
          position:'top-center'
@@ -115,6 +108,10 @@ export default function Register() {
       <button className="btn btn-primary">Register</button>
     </div>
   </form>
+  {/* Show Error Message */}
+  {
+    errorMessage && <p className='text-red-600 mb-6 mx-auto px-2'>{errorMessage}</p>
+  }
   <div className="mx-auto">
     <button onClick={handleGoogleLogin} className="btn btn-primary px-[70px] mb-4">
     <i className="fa-brands fa-google"></i>

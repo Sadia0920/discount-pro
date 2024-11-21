@@ -1,7 +1,7 @@
 # Discount PRO 
 
 ## Live link to the deployed project
-- 
+- https://discount-pro-bbfa4.web.app/
 
 ## Purpose of this project 
 - The purpose of this project is to make a website  that serve as a platform for users to discover and access discounts, deals, and promotional codes from various retailers and service providers.

@@ -22,8 +22,8 @@ export default function MyProfile() {
     <h2 className="card-title text-2xl">{user.displayName}</h2>
     <p className='text-gray-600 font-semibold my-5'>{user.email}</p>
     <div className="card-actions ">
-      <Link to='/updateInfo'><button className="btn btn-primary">Update</button>
-      </Link>
+    <Link to='/updateInfo'><button className="btn btn-primary">Update</button>
+    </Link>
   </div>
   </div>
   </div>

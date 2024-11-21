@@ -8,6 +8,7 @@ import Login from "../pages/Login"
 import Register from "../pages/Register"
 import PrivateRoute from "./PrivateRoute"
 import CouponPage from "../pages/CouponPage"
+import UpdateInfo from "../pages/UpdateInfo"
 
 const router = createBrowserRouter([
     {
@@ -17,12 +18,12 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader:() => fetch('/couponCollectionData.json')
+                loader:() => fetch('../couponCollectionData.json')
             },
             {
                 path:'/brands',
                 element:<Brands></Brands>,
-                loader:() => fetch('/couponCollectionData.json')
+                loader:() => fetch('../couponCollectionData.json')
             },
             {
                 path:'/about',
@@ -41,9 +42,13 @@ const router = createBrowserRouter([
                 element:<Login></Login>
             },
             {
-                path:'/coupon',
-                element:<CouponPage></CouponPage>,
-                loader:() => fetch('/couponCollectionData.json')
+                path:'/brand/:_id',
+                element:<PrivateRoute><CouponPage></CouponPage></PrivateRoute>,
+                loader:() => fetch('../couponCollectionData.json')
+            },
+            {
+                path:'/updateInfo',
+                element:<UpdateInfo></UpdateInfo>
             }
         ]
     }

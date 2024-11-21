@@ -1,9 +1,12 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import Rating from "react-rating"
+import { NavLink } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 export default function AllBrandsInfo({item}) {
-    const {brand_name,rating,description,brand_logo,isSaleOn} = item
+    const {_id,brand_name,rating,description,brand_logo,isSaleOn} = item
     const [addRating,setAddRating]=useState(0);
+    const {user} = useContext(AuthContext)
 
   return (
   <div>
@@ -33,7 +36,17 @@ export default function AllBrandsInfo({item}) {
     <p className='text-gray-500 text-lg font-bold text-center'>{description}</p>
   </div>
   <div className="card-actions flex-col justify-center items-center">
-      <button className="btn btn-primary">View Coupons</button>
+      {
+        user?
+        <>
+          <NavLink to={`/brand/${_id}`}><button className="btn btn-primary">View Coupons</button></NavLink>
+        </>
+        :
+        <>
+           <NavLink to='/login'><button className="btn btn-primary">View Coupons</button></NavLink>
+        </>
+      }
+     
      <div>
      {
         isSaleOn && <>

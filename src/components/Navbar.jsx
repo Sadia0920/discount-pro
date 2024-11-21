@@ -37,11 +37,6 @@ export default function Navbar() {
       <p>About Dev</p>
       </NavLink> 
 
-      <NavLink className='flex items-center lg:ml-5 text-gray-400 text-lg font-semibold' to='/coupon'>
-      <VscWorkspaceUnknown></VscWorkspaceUnknown>
-      <p>Coupon</p>
-      </NavLink> 
-    
       {
         user && <>
         <NavLink className='flex items-center lg:ml-5 text-gray-400 text-lg font-semibold' to='/myProfile'>
@@ -94,7 +89,7 @@ export default function Navbar() {
     {
       user? <>
       <img className='w-8 h-8 rounded-full' src={user.photoURL} alt="" />
-      <p className='mx-2'>{user.email}</p>
+      <p className='mx-2 md:block hidden'>{user.email}</p>
       <Link onClick={handleSignOut} className="btn bg-blue-500 text-white font-semibold md:mr-3">LogOut</Link>
       </>
        :
